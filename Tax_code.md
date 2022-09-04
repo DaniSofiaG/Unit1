@@ -23,3 +23,4 @@ elif not (salary>100.001):
         print(tax_25)
   ```
 
+<img width="1440" alt="Screen Shot 2022-09-04 at 23 06 23" src="https://user-images.githubusercontent.com/111941990/188317836-5ed63ec4-b479-4ed0-aced-a518104cd5c7.png">
