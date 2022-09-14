@@ -32,4 +32,5 @@ for locker in range(1, number_lockers+1, 1):
     #print(f"Locker No {locker}, {color}")
     print(f"Locker No {locker} is color {color.upper().center(50,'.')}")
 ```
+<img width="1436" alt="Screen Shot 2022-09-14 at 14 29 22" src="https://user-images.githubusercontent.com/111941990/190067558-12041010-9648-4280-948f-ecdce9c5696d.png">
 
