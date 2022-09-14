@@ -45,5 +45,5 @@ print(f"The solution is {output}")
 
 <img width="817" alt="Screen Shot 2022-09-01 at 21 13 56" src="https://user-images.githubusercontent.com/111941990/187911520-cf8057d6-d370-4c0c-a55c-43085347d252.png">
 
-<img width="680" alt="Screen Shot 2022-09-14 at 13 54 08" src="https://user-images.githubusercontent.com/111941990/190063023-0f43c497-cf78-4283-88ca-8a80a961cad4.png">
+<img width="713" alt="Screen Shot 2022-09-14 at 21 36 13" src="https://user-images.githubusercontent.com/111941990/190155762-4838ffcf-43c5-4c31-a66f-98b20a2bdc3a.png">
 
