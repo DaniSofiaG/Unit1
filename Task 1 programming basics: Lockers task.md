@@ -1,6 +1,8 @@
 ```.py
 number_lockers = 2400
 
+
+
 #2
 for locker in range(1, number_lockers+1, 1):
     print(f"Locker No {locker}")
@@ -33,4 +35,10 @@ for locker in range(1, number_lockers+1, 1):
     print(f"Locker No {locker} is color {color.upper().center(50,'.')}")
 ```
 <img width="1436" alt="Screen Shot 2022-09-14 at 14 29 22" src="https://user-images.githubusercontent.com/111941990/190067558-12041010-9648-4280-948f-ecdce9c5696d.png">
+
+<img width="712" alt="Screen Shot 2022-09-19 at 20 18 19" src="https://user-images.githubusercontent.com/111941990/191006445-de41e464-26ca-432a-9e5a-9a1d81606fc7.png">
+
+<img width="698" alt="Screen Shot 2022-09-19 at 20 18 26" src="https://user-images.githubusercontent.com/111941990/191006481-082a035f-8e7f-4f98-9f90-251268205535.png">
+
+
 
