@@ -31,3 +31,4 @@ if symbols_ask == "yes":
 
 <img width="511" alt="Screen Shot 2022-09-21 at 16 58 38" src="https://user-images.githubusercontent.com/111941990/191448794-c4e9614c-4951-4b99-9b7c-90c7ba8d36dc.png">
 
+..
