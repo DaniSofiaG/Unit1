@@ -22,3 +22,5 @@ print(f"{hl}-Room {floor}F{room_f}")
 
 
 <img width="1399" alt="Screen Shot 2022-09-19 at 21 42 53" src="https://user-images.githubusercontent.com/111941990/191020810-9f9b6efd-e706-4a9e-be57-f0b733e616dc.png">
+
+<img width="525" alt="Screen Shot 2022-09-21 at 17 19 43" src="https://user-images.githubusercontent.com/111941990/191453512-384999e9-dab3-4c07-8486-4a4badf2c019.png">
