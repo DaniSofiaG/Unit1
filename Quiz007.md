@@ -28,3 +28,6 @@ if symbols_ask == "yes":
 ```
 
 <img width="1397" alt="Screen Shot 2022-09-19 at 19 42 15" src="https://user-images.githubusercontent.com/111941990/191000945-10b96aa2-efde-49df-9ba4-dd42a3b7c738.png">
+
+<img width="511" alt="Screen Shot 2022-09-21 at 16 58 38" src="https://user-images.githubusercontent.com/111941990/191448794-c4e9614c-4951-4b99-9b7c-90c7ba8d36dc.png">
+
