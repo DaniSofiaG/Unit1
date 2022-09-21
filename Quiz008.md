@@ -1,4 +1,5 @@
 ```.py
+#Sl
 room= int(input("Insert a number room:"))
 
 if room < 100:
