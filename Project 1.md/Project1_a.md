@@ -45,11 +45,12 @@ Justify the tools/structure of your solution
 
 ## Success Criteria
 1. The electronic ledger is a text-based software (Runs in the Terminal).
-2. The electronic ledger display the basic description of the cyrptocurrency selected.
-3. The electronic ledger allows to enter, withdraw and record transactions.
-4. The electronic ledger can reflect the clients current and initial balance 
-5. The electronic ledger can show a graphic of the historical data of Binance coin for the past month [chamge]
-6. The electronic ledger can identify with a different color the dates when the client made a transaction within the graphic [change]
+The electronic ledger displays the basic description of the cryptocurrency selected.
+The electronic ledger allows users to enter, withdraw and record transactions.
+The electronic ledger has a system to create and record accounts, so that the client Sato can make her personal account. 
+The electronic ledger can reflect the client's current and initial balance
+The electronic ledger can show a graphic of the value of the transactions made by the client 
+
 
 # Criteria B: Design
 
