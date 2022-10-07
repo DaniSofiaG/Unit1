@@ -59,51 +59,7 @@ Justify the tools/structure of your solution
 
 
 ## Flow Diagrams
-# Log-in and Register system Flow chart 3
-```.py
-#Log-in screen for Sato
-from my_lib import register, end_code, colors, bold_white, validate_int_input, transactions, initial_balance, current_balance
-from Password import login
-
-welcome_msg = "Welcome to your crypto wallet".center(50, "=")
-prompt_msg = "Log-in if you have an account or register to create a new one [1-2]"
-
-print(f"{colors[2]}{welcome_msg}{end_code}")
-print("Log-in if you have an account or register to create a new one".center(50))
-
-account= """
-1. log-in
-2. register
-"""
-print(account)
-option = validate_int_input(prompt_msg)
-while option>2 or option < 1:
-    option = validate_int_input(f"{colors[1]}Invalid option.{prompt_msg}{end_code}")
-
-#1: log-in and registration
-with open("db.csv", "r") as file:
-    Passwordtwo= file.readlines()
-
-if option ==1:
-    print(f"{bold_white}1.Log-in{end_code}")
-    user= input("Enter you username:")
-    password= input("Enter your password:")
-    existing_user= login(user, password)
-    if existing_user:
-        print("Welcome back!")
-    else:
-        print(f"{colors[1]}Invalid username or password. You'll be sent to the welcome page, please try again!{end_code}")
-        exit()
-    index = 0
-
-if option ==2:
-    print(f"{bold_white}2.Register{end_code}")
-    user= input("New Username:")
-    password = input("New password:")
-    new_user= register(user, password)
-    print("Welcome!")
-    index = 0
-```
+### Register and Log-in system Flow chart 3
 
 ![Project_ log-in and register system flowchart](https://user-images.githubusercontent.com/111941990/194450705-f3b3dd76-4ac0-4b81-b994-f044984c4e62.png)
 
@@ -140,19 +96,56 @@ if functions == 2:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
 | 1       | Create system diagram                                         | To have a clear idea of the hardware and software requirements for the proposed solution                        | 10min         | Sep 24                 | B         |
 
+
+# Criteria C: Development
+
+## Register and Log-in System
+My client Ms Sato, requires a system to create a personal acctount and to protect the data that she inputs into that account. To make this possible I created a register system and worked on the log-in system during class. The register system allows the user to create a personal account with a username and password of their choice, which is appended to a a file that then can be used to continue to the log-in system. Additional to that the registering system creates a file titled with the username created during the registration process, this file is personal and unique to the user. Th elog-in system is a great way to use the data storaged in the file when trying to access the program another time without registering a new account.
+```.py
+from project_library import colors, end_code, validate_int_input, register, login, initial_balance, transactions, withdraw
+
+#Login and Register
+
+welcome_msg = "Welcome to your crypto wallet".center(50, "=")
+prompt_msg = (f"{colors[5]}Log-in if you have an account or register to create a new one [1-2]{end_code}")
+
+print(f"{colors[6]}{welcome_msg}{end_code}")
+
+account= """
+1. log-in
+2. register
+"""
+print(f"{colors[5]}{account}{end_code}")
+account = validate_int_input(prompt_msg)
+while not account in [1,2]:
+    account = validate_int_input(f"{colors[1]}Invalid option.{prompt_msg}{end_code}")
+
+with open("db.csv", "r") as file:
+
+    #1.Login
+    if account == 1:
+        print(f"{colors[4]}1.Log-in{end_code}")
+        user= input(f"{colors[6]}Enter your username:")
+        password = input(f"{colors[6]}Enter your password:")
+        if user:
+            print(f"{colors[5]}Welcome back!{end_code}")
+        else:
+            print(f"{colors[1]}Invalid username or password. Refresh to try again!")
+            exit()
+        index = 0
+
+    #2.Register
+    if account == 2:
+        print(f"{colors[3]}2.Register{end_code}")
+        user = input(f"{colors[2]}New username:")
+        password = input(f"{colors[2]}New password:")
+        new_user = register(user, password)
+        print(f"{colors[5]}Welcome!{end_code}")
+        index = 0
+        create_file = open(f"{user}", "x")
+```
