@@ -84,11 +84,17 @@ Justify the tools/structure of your solution
 
 
 ## Record of Tasks
-| Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
-|---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1       | Create system diagram                                         | To have a clear idea of the hardware and software requirements for the proposed solution                        | 10min         | Sep 24                 | B         |
-
-
+| Task No |              Planned Action              |                                                                        Planned Outcome                                                                       | Time estimate | Target completion date | Criterion |
+|:-------:|:----------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------:|:----------------------:|:---------:|
+|    1    |       List out the success criteria      |                             To have a clear idea of what I wnat to do with my project and to start thinking on how I might do it                             |     10min     |         Sep 20         |     A     |
+|    2    |      Complet problem identification      |                                                 To understand the problem and what my task as a developer is                                                 |     10 min    |         Sep 20         |     A     |
+|    3    |    Complete design statement template    |                                                     To identify the  my clients needs and what I will do                                                     |     10 min    |         Sep 20         |     A     |
+|    4    |         Write solution rationale         | To have a clear and organized statement of what and why im doing my crypto wallen the way that im doing it, enphasizing the problem, software and structure. |     15min     |         Sep 22         |     A     |
+|    5    |           Create system diagram          |                                   To have a clear idea of the hardware and software requirements for the proposed solution                                   |     10min     |         Sep 24         |     B     |
+|    6    |          Create welcome section          |                                                   To have a base in which start to create the crypto wallet                                                  |     30min     |         Sep 25         |     C     |
+|    7    | To create a log-in and a register system |                                                   To fulfill some of my clent's, Ms Sato, needs and wants.                                                   |     40min     |         Sep 27         |     C     |
+|    8    |          Code my functions menu          |                                             To have a menu based on the sucdess criteria I previously decided on                                             |     30min     |         Sep 27         |     C     |
+|    9    |          Make my first flowchart         |                                 To create a flowchart based on a section of my my code that is important to it and the task.                                 |     30min     |         Sep 30         |     B     |
 # Criteria C: Development
 
 ## Register and Log-in System
