@@ -7,16 +7,30 @@
 
 ## Problem definition
 
-Ms. Sato is a local trader who is interested in the emerging market of cryptocurrencies. She has started to buy and sell electronic currencies, however at the moment she is tracking all his transaction using a ledger in a spreadsheet which is starting to become burdensome and too disorganized. It is also difficult for Ms Sato to find past transactions or important statistics about the currency. Ms Sato is in need of a digital ledger that helps her track the amount of the cryptocurrency, the transactions, along with useful statistics. 
+### Definition of the problem
+#### Who is the client?
+Ms. Sato is a local trader who is interested in the emerging market of cryptocurrencies
+#### Why is the product being developed?	
+She has started to buy and sell electronic currencies, however at the moment she is tracking all his transactions using a ledger in a spreadsheet which is starting to become burdensome and too disorganized. It is also difficult for Ms Sato to find past transactions or important statistics about the currency. Ms Sato is in need of a digital ledger that helps her track the amount of the cryptocurrency, the transactions, along with useful statistics.
+
+
 
 Apart for this requirements, Ms Sato is open to explore a cryptocurrency selected by the developer.
 
-An examle of the data store is date, despcription, category and ammount
-| Date | Description | Category | Amount |
-|------|-------------|----------|--------|--------
-|Sep 23 2022 | bought a house | Expenses | 10 BTC |
-|Sep 24 2022 | food for house celebration | Food | 0.000001 BTC |
+An example of the data stored is 
+
+| Date | Description | Category | Amount  |
+|------|-------------|----------|---------|
+| Sep 23 2022 | bought a house | Expenses | 10 BTC |
+| Sep 24 2022 | food for house celebration | Food | 0.000001 BTC |
+
 ## Proposed Solution
+
+### Rationale for proposed solution
+#### What is the product?
+A crypto wallet, a digital ledger that helps her track the amount of the cryptocurrency, the transactions, along with useful statistics.
+#### How is this product an effective solution?
+This product is an effective solution because unlike other tools such as spreadsheets for material methods like accounting books, it will allow Ms. Sato to access and input her information quickly, securely and in a single place, specially designed for her needs.
 
 Design statement:
 I will design and make an electronic ledger for a client who is a local trader, looking for a way to organize and keep track of her transactions. The ——– will about ———— and is constructed using the software pycharm. It will take  ———- to make and will be evaluated according to the criteria ———.
@@ -60,22 +74,9 @@ Justify the tools/structure of your solution
 
 ## Flow Diagrams
 ### Register and Log-in system Flow chart 3
-
 ![Project_ log-in and register system flowchart](https://user-images.githubusercontent.com/111941990/194450705-f3b3dd76-4ac0-4b81-b994-f044984c4e62.png)
 
 # Initaial Balance Flow chart 2
-```.py
-#Initial value
-if account == 2:
-    steps_msg = "We are happy to have you. Lets start to set up your account".center(50)
-    print(f"{colors[6]}{steps_msg}{end_code}")
-    print(f"{colors[4]} Set up initial BNB balance balance: (ex. 56776 BNB){end_code}")
-    with open(f"{user}"r"") as file:
-        balance = input()
-        new_balance = initial_balance(balance)
-        print(f"{colors[6]}Thank you! Now you can start using your binance crypto wallet :D{end_code}")
-        index = 0
-```
 ![2nd flowchart](https://user-images.githubusercontent.com/111941990/194595598-4cb6301b-e401-4c7d-8379-2bbed89380cb.jpg)
 
 
@@ -149,3 +150,20 @@ with open("db.csv", "r") as file:
         index = 0
         create_file = open(f"{user}", "x")
 ```
+
+## Initaial Balance Flow chart 2
+My client Ms Sato, requires a system that allows her to input her initial balance of Binance, in order to tract her future transactions and overall valance in a more organized and factual way. To make this possible I created a request for the user to input their initial balance into a file. This program runs right after and only if the user register for the first time, this way I avoided creating unecessary data that I would later have to delete from the file. The instructions for the format in which Ms Sato must input her initial balance is really crlear due to the use fo color and direct instructions. The file in which the balance is added is formated like a spread shit so that keepink track with the users balance is visually easier to use.
+
+```.py
+#Initial value
+if account == 2:
+    steps_msg = "We are happy to have you. Lets start to set up your account".center(50)
+    print(f"{colors[6]}{steps_msg}{end_code}")
+    print(f"{colors[4]} Set up initial BNB balance balance: (ex. 56776 BNB){end_code}")
+    with open(f"{user}"r"") as file:
+        balance = input()
+        new_balance = initial_balance(balance)
+        print(f"{colors[6]}Thank you! Now you can start using your binance crypto wallet :D{end_code}")
+        index = 0
+```
+
