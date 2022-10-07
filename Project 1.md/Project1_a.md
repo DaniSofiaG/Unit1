@@ -55,6 +55,8 @@ Justify the tools/structure of your solution
 # Criteria B: Design
 
 ## System Diagram
+![IMG_7301](https://user-images.githubusercontent.com/111941990/194451168-2451c6ef-ef40-44e6-ba95-aa313ba086ae.png)
+
 
 ## Flow Diagrams
 ```.py
