@@ -123,6 +123,34 @@ if account == 2:
 ![2nd flowchart](https://user-images.githubusercontent.com/111941990/194595598-4cb6301b-e401-4c7d-8379-2bbed89380cb.jpg)
 
 
+# Record Transactions Flow chart 3
+```.py
+#2. Record transaction
+if functions == 2:
+    print(f"{colors[5]}1. Record transaction{end_code}")
+    category= input(f"{colors[6]}Select the category of the transaction: |food|Expenses|Transportation|Healthcare|Education|Personal| ->")
+    ammount= input(f"Insert the ammount of the transaction: (ex. 26473 BNB) -> ")
+    date= input(f"Insert the date the transaction was made: (YYYY/MM/DD) -> ")
+    description = input(f"Write a short description of the transaction: ->{end_code}")
+    new_transaction= transactions(category, ammount, date, description)
+    index = 0
+```
+
+![3rd Flow chart](https://user-images.githubusercontent.com/111941990/194599362-5e8e4f82-4e5d-4c78-b0d4-e584e8fd97c2.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
