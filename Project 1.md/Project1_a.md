@@ -47,9 +47,9 @@ Justify the tools/structure of your solution
 1. The electronic ledger is a text-based software (Runs in the Terminal).
 2. The electronic ledger displays the basic description of the cryptocurrency selected.
 3. The electronic ledger allows users to enter, withdraw and record transactions.
-4. The electronic ledger has a system to create and record accounts, so that the client Sato can make her personal account. 
-5. The electronic ledger can reflect the client's current and initial balance
-6. The electronic ledger can show a graphic of the value of the transactions made by the client 
+4. The electronic ledger has a system to create and record accounts, so that the client Ms Sato can make her personal account. 
+5. The electronic ledger creates a personal file after a new client registers
+6. The electronic ledger can reflect the client's current and initial balance
 
 
 # Criteria B: Design
