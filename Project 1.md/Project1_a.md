@@ -59,6 +59,7 @@ Justify the tools/structure of your solution
 
 
 ## Flow Diagrams
+# Log-in and Register system Flow chart 1
 ```.py
 #Log-in screen for Sato
 from my_lib import register, end_code, colors, bold_white, validate_int_input, transactions, initial_balance, current_balance
@@ -106,6 +107,20 @@ if option ==2:
 
 ![Project_ log-in and register system flowchart](https://user-images.githubusercontent.com/111941990/194450705-f3b3dd76-4ac0-4b81-b994-f044984c4e62.png)
 
+# Initaial Balance Flow chart 2
+```.py
+#Initial value
+if account == 2:
+    steps_msg = "We are happy to have you. Lets start to set up your account".center(50)
+    print(f"{colors[6]}{steps_msg}{end_code}")
+    print(f"{colors[4]} Set up initial BNB balance balance: (ex. 56776 BNB){end_code}")
+    with open(f"{user}"r"") as file:
+        balance = input()
+        new_balance = initial_balance(balance)
+        print(f"{colors[6]}Thank you! Now you can start using your binance crypto wallet :D{end_code}")
+        index = 0
+```
+![2nd flowchart](https://user-images.githubusercontent.com/111941990/194595598-4cb6301b-e401-4c7d-8379-2bbed89380cb.jpg)
 
 
 ## Record of Tasks
