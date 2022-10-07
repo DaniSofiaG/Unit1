@@ -59,7 +59,7 @@ Justify the tools/structure of your solution
 
 
 ## Flow Diagrams
-# Log-in and Register system Flow chart 1
+# Log-in and Register system Flow chart 3
 ```.py
 #Log-in screen for Sato
 from my_lib import register, end_code, colors, bold_white, validate_int_input, transactions, initial_balance, current_balance
@@ -123,7 +123,7 @@ if account == 2:
 ![2nd flowchart](https://user-images.githubusercontent.com/111941990/194595598-4cb6301b-e401-4c7d-8379-2bbed89380cb.jpg)
 
 
-# Record Transactions Flow chart 3
+# Record Transactions Flow chart 1
 ```.py
 #2. Record transaction
 if functions == 2:
