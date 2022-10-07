@@ -72,7 +72,7 @@ Justify the tools/structure of your solution
 
 ## Flow Diagrams
 ### Register and Log-in system Flow chart 3
-![Project_ log-in and register system flowchart](https://user-images.githubusercontent.com/111941990/194450705-f3b3dd76-4ac0-4b81-b994-f044984c4e62.png)
+![Project_ log-in and register system flowchart (1)](https://user-images.githubusercontent.com/111941990/194621186-ac7890ff-0616-4892-a347-da73fa0ff3c3.jpg)
 
 ### Initaial Balance Flow chart 2
 ![2nd flowchart](https://user-images.githubusercontent.com/111941990/194595598-4cb6301b-e401-4c7d-8379-2bbed89380cb.jpg)
