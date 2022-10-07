@@ -57,6 +57,53 @@ Justify the tools/structure of your solution
 ## System Diagram
 
 ## Flow Diagrams
+```.py
+#Log-in screen for Sato
+from my_lib import register, end_code, colors, bold_white, validate_int_input, transactions, initial_balance, current_balance
+from Password import login
+
+welcome_msg = "Welcome to your crypto wallet".center(50, "=")
+prompt_msg = "Log-in if you have an account or register to create a new one [1-2]"
+
+print(f"{colors[2]}{welcome_msg}{end_code}")
+print("Log-in if you have an account or register to create a new one".center(50))
+
+account= """
+1. log-in
+2. register
+"""
+print(account)
+option = validate_int_input(prompt_msg)
+while option>2 or option < 1:
+    option = validate_int_input(f"{colors[1]}Invalid option.{prompt_msg}{end_code}")
+
+#1: log-in and registration
+with open("db.csv", "r") as file:
+    Passwordtwo= file.readlines()
+
+if option ==1:
+    print(f"{bold_white}1.Log-in{end_code}")
+    user= input("Enter you username:")
+    password= input("Enter your password:")
+    existing_user= login(user, password)
+    if existing_user:
+        print("Welcome back!")
+    else:
+        print(f"{colors[1]}Invalid username or password. You'll be sent to the welcome page, please try again!{end_code}")
+        exit()
+    index = 0
+
+if option ==2:
+    print(f"{bold_white}2.Register{end_code}")
+    user= input("New Username:")
+    password = input("New password:")
+    new_user= register(user, password)
+    print("Welcome!")
+    index = 0
+```
+
+![Project_ log-in and register system flowchart](https://user-images.githubusercontent.com/111941990/194450705-f3b3dd76-4ac0-4b81-b994-f044984c4e62.png)
+
 
 
 ## Record of Tasks
