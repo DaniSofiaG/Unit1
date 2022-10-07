@@ -74,23 +74,11 @@ Justify the tools/structure of your solution
 ### Register and Log-in system Flow chart 3
 ![Project_ log-in and register system flowchart](https://user-images.githubusercontent.com/111941990/194450705-f3b3dd76-4ac0-4b81-b994-f044984c4e62.png)
 
-# Initaial Balance Flow chart 2
+### Initaial Balance Flow chart 2
 ![2nd flowchart](https://user-images.githubusercontent.com/111941990/194595598-4cb6301b-e401-4c7d-8379-2bbed89380cb.jpg)
 
 
-# Record Transactions Flow chart 1
-```.py
-#2. Record transaction
-if functions == 2:
-    print(f"{colors[5]}1. Record transaction{end_code}")
-    category= input(f"{colors[6]}Select the category of the transaction: |food|Expenses|Transportation|Healthcare|Education|Personal| ->")
-    ammount= input(f"Insert the ammount of the transaction: (ex. 26473 BNB) -> ")
-    date= input(f"Insert the date the transaction was made: (YYYY/MM/DD) -> ")
-    description = input(f"Write a short description of the transaction: ->{end_code}")
-    new_transaction= transactions(category, ammount, date, description)
-    index = 0
-```
-
+### Record Transactions Flow chart 1
 ![3rd Flow chart](https://user-images.githubusercontent.com/111941990/194599362-5e8e4f82-4e5d-4c78-b0d4-e584e8fd97c2.jpg)
 
 
@@ -151,7 +139,6 @@ with open("db.csv", "r") as file:
 
 ## Initaial Balance Flow chart 2
 My client Ms Sato, requires a system that allows her to input her initial balance of Binance, in order to tract her future transactions and overall valance in a more organized and factual way. To make this possible I created a request for the user to input their initial balance into a file. This program runs right after and only if the user register for the first time, this way I avoided creating unecessary data that I would later have to delete from the file. The instructions for the format in which Ms Sato must input her initial balance is really crlear due to the use fo color and direct instructions. The file in which the balance is added is formated like a spread shit so that keepink track with the users balance is visually easier to use.
-
 ```.py
 #Initial value
 if account == 2:
@@ -165,3 +152,16 @@ if account == 2:
         index = 0
 ```
 
+## Record Transactions Flow chart 1
+My client Ms Sato, requires a system that where she can record the transactions she makes with ther bianance cryptocurrency, in an organized and clear matter. To make this possible I created a function that allow Ms Sato to append her transactions to a file in the form of a spreadseet that is devided by category, amount, date and a short description of the transaction. This program runs after the home menu if the user inputs 2. tFor this section of the code to function, I had to create a function in side my project_library which is a separate python file inside the same project. I imported the function so that I could use it in my program with the inputs inputs from Ms Sato.
+```.py
+#2. Record transaction
+if functions == 2:
+    print(f"{colors[5]}1. Record transaction{end_code}")
+    category= input(f"{colors[6]}Select the category of the transaction: |food|Expenses|Transportation|Healthcare|Education|Personal| ->")
+    ammount= input(f"Insert the ammount of the transaction: (ex. 26473 BNB) -> ")
+    date= input(f"Insert the date the transaction was made: (YYYY/MM/DD) -> ")
+    description = input(f"Write a short description of the transaction: ->{end_code}")
+    new_transaction= transactions(category, ammount, date, description)
+    index = 0
+```
