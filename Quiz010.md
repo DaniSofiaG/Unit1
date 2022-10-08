@@ -14,3 +14,4 @@ print(test1)
 
 <img width="1362" alt="Screen Shot 2022-10-08 at 15 20 34" src="https://user-images.githubusercontent.com/111941990/194692696-9a274bc0-a9cc-4b43-8ac7-661c7119d443.png">
 
+<img width="402" alt="Screen Shot 2022-10-08 at 15 31 03" src="https://user-images.githubusercontent.com/111941990/194693384-0d59486a-c251-4ee3-8c31-8e5e51c9c585.png">
