@@ -16,10 +16,11 @@ def calendar(output=str):
 
     print(month[m], y)
     print('Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa')
-    print(month[m], y)
-    print('Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa')
 
     days = f"{days_1}\n {days_2}\n {days_3}\n {days_4}\n {days_5}"
+    print(days)
+    
+    return output
 ```
 
 
