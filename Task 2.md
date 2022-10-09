@@ -76,3 +76,8 @@ if option ==1:
 print(average)
 ```
 
+<img width="319" alt="Screen Shot 2022-10-10 at 1 42 32" src="https://user-images.githubusercontent.com/111941990/194769022-9c4c099f-2fa3-4a12-a1bf-d852dea107ee.png">
+<img width="373" alt="Screen Shot 2022-10-10 at 1 41 56" src="https://user-images.githubusercontent.com/111941990/194769027-22c5cd96-6ed0-4ee2-a0ef-e4c8b96c7d91.png">
+
+
+
