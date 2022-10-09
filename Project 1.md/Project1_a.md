@@ -347,5 +347,15 @@ if functions == 5:
     if start_msg == 1:
         start()
 ```
+<img width="783" alt="Screen Shot 2022-10-09 at 14 17 03" src="https://user-images.githubusercontent.com/111941990/194739475-9d72f715-6295-4c8c-ac7f-eabec7e61ff8.png">
+
+<img width="900" alt="Screen Shot 2022-10-09 at 14 18 05" src="https://user-images.githubusercontent.com/111941990/194739486-7bc076f2-0cb5-478c-a280-4c470f4bf51c.png">
+
+<img width="932" alt="Screen Shot 2022-10-09 at 14 18 45" src="https://user-images.githubusercontent.com/111941990/194739491-8e273987-62ea-4ea7-bb08-8180030d75be.png">
+
+<img width="1186" alt="Screen Shot 2022-10-09 at 14 19 13" src="https://user-images.githubusercontent.com/111941990/194739498-73327285-dd5e-49a4-94d5-c864d296b553.png">
+
+<img width="867" alt="Screen Shot 2022-10-09 at 14 20 25" src="https://user-images.githubusercontent.com/111941990/194739502-11acbac1-cef0-42e8-8fd1-ffd71444fad3.png">
+
 
 
