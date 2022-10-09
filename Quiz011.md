@@ -16,3 +16,4 @@ def calendar(output=str):
 
 
 <img width="1128" alt="Screen Shot 2022-10-09 at 13 12 44" src="https://user-images.githubusercontent.com/111941990/194737734-f7d0c92c-fe84-4c76-9b32-a9b1d9b40c79.png">
+<img width="306" alt="Screen Shot 2022-10-10 at 0 11 06" src="https://user-images.githubusercontent.com/111941990/194764589-91acaf70-1029-453b-a6e9-724a31a08309.png">
