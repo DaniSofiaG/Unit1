@@ -188,3 +188,164 @@ if functions == 2:
     new_transaction= transactions(category, ammount, date, description)
     index = 0
 ```
+
+# Final code
+```.py
+from project_library import colors, end_code, validate_int_input, register, login, initial_balance, transactions, withdraw
+
+#Login and Register
+
+welcome_msg = "Welcome to your crypto wallet".center(50, "=")
+prompt_msg = (f"{colors[5]}Log-in if you have an account or register to create a new one [1-2]{end_code}")
+
+print(f"{colors[6]}{welcome_msg}{end_code}")
+
+account= """
+1. log-in
+2. register
+"""
+print(f"{colors[5]}{account}{end_code}")
+account = validate_int_input(prompt_msg)
+while not account in [1,2]:
+    account = validate_int_input(f"{colors[1]}Invalid option.{prompt_msg}{end_code}")
+
+with open("db.csv", "r") as file:
+
+    #1.Login
+    if account == 1:
+        print(f"{colors[4]}1.Log-in{end_code}")
+        user= input(f"{colors[6]}Enter your username:")
+        password = input(f"{colors[6]}Enter your password:")
+        if user:
+            print(f"{colors[5]}Welcome back!{end_code}")
+        else:
+            print(f"{colors[1]}Invalid username or password. Refresh to try again!")
+            exit()
+        index = 0
+
+    #2.Register
+    if account == 2:
+        print(f"{colors[3]}2.Register{end_code}")
+        user = input(f"{colors[2]}New username:")
+        password = input(f"{colors[2]}New password:")
+        new_user = register(user, password)
+        print(f"{colors[5]}Welcome!{end_code}")
+        index = 0
+        create_file = open(f"{user}", "x")
+
+    print(f"{colors[7]}°".center(100, "°"))
+
+#Initial value
+if account == 2:
+    steps_msg = "We are happy to have you. Lets start to set up your account".center(50)
+    print(f"{colors[6]}{steps_msg}{end_code}")
+    print(f"{colors[4]} Set up initial BNB balance balance: (ex. 56776 BNB){end_code}")
+    with open(f"{user}"r"") as file:
+        balance = input()
+        new_balance = initial_balance(balance)
+        print(f"{colors[6]}Thank you! Now you can start using your binance crypto wallet :D{end_code}")
+        index = 0
+
+    print(f"{colors[7]}°".center(100, "°"))
+
+#Home Menu
+welcome_acc = "HOME MENU".center(50, "=")
+function_msg = "What do you want to do today? [1-5]".center(50)
+print(f"{colors[2]}{welcome_acc}{end_code}")
+functions= """
+1. What is Binance coin?
+2. Record transaction
+3. Check balance
+4. Withdraw
+5. Check graphics 
+"""
+print(f"{colors[3]}{functions}{end_code}")
+functions = validate_int_input(function_msg)
+while functions>5 or functions < 1:
+    functions = validate_int_input(f"{colors[1]}Invalid option.{function_msg}{end_code}")
+
+#1. What is Binance Coin?
+if functions == 1:
+    print(f"{colors[5]}1. What is Binance coin?")
+    print(f"{colors[6]}BNB is the cryptocurrency coin that powers the BNB Chain ecosystem. ")
+    print(f"As one of the world's most popular utility tokens, not only can you")
+    print(f"trade BNB like any other cryptocurrency, you can also use BNB in a ")
+    print(f"wide range of applications and use cases.{end_code}")
+
+    #Back to welcome  page
+    print(f"{colors[7]}°".center(100, "°"))
+    complete_msg = "Function completed!".center(50, "=")
+    start_msg = (f"{colors[5]}Rerun to return to the Welcome page{end_code}")
+    print(f"{colors[5]}{complete_msg}{end_code}")
+    print(f"{colors[6]}{start_msg}{end_code}")
+    if start_msg == 1:
+        start()
+
+#2. Record transaction
+if functions == 2:
+    print(f"{colors[5]}1. Record transaction{end_code}")
+    category= input(f"{colors[6]}Select the category of the transaction: |food|Expenses|Transportation|Healthcare|Education|Personal| ->")
+    ammount= input(f"Insert the ammount of the transaction: (ex. 26473 BNB) -> ")
+    date= input(f"Insert the date the transaction was made: (YYYY/MM/DD) -> ")
+    description = input(f"Write a short description of the transaction: ->{end_code}")
+    new_transaction= transactions(category, ammount, date, description)
+    index = 0
+    # Back to welcome  page
+    print(f"{colors[7]}°".center(100, "°"))
+    complete_msg = "Function completed!".center(50, "=")
+    start_msg = (f"{colors[5]}Rerun to return to the Welcome page{end_code}")
+    print(f"{colors[5]}{complete_msg}{end_code}")
+    print(f"{colors[6]}{start_msg}{end_code}")
+    if start_msg == 1:
+        start()
+
+
+#3. Check balance
+if functions == 3:
+    print(f"{colors[5]}2.Check balance{end_code}")
+    with open('balance.csv', 'r') as f:
+        print(f"{colors[2]}{f.read()}BNB\n{end_code}")
+
+    #Back to welcome  page
+    print(f"{colors[7]}°".center(100, "°"))
+    complete_msg = "Function completed!".center(50, "=")
+    start_msg = (f"{colors[5]}Rerun to return to the Welcome page{end_code}")
+    print(f"{colors[5]}{complete_msg}{end_code}")
+    print(f"{colors[6]}{start_msg}{end_code}")
+    if start_msg == 1:
+        start()
+
+#4. Withdraw
+if functions == 4:
+    print(f"{colors[5]}4.Withdraw{end_code}")
+    with open('balance.csv', 'a') as file:
+        change=int(input("How much would you like to withdraw?"))
+        balance= file.write("balance.csv")
+        new_balance= balance - change
+        current_blance= withdraw(new_balance)
+
+    #Back to welcome  page
+    print(f"{colors[7]}°".center(100, "°"))
+    complete_msg = "Function completed!".center(50, "=")
+    start_msg = (f"{colors[5]}Rerun to return to the Welcome page{end_code}")
+    print(f"{colors[5]}{complete_msg}{end_code}")
+    print(f"{colors[6]}{start_msg}{end_code}")
+    if start_msg == 1:
+        start()
+
+#5. Graphics
+if functions == 5:
+    print(f"{colors[5]}5.Graphs{end_code}")
+    print(f"{colors[1]}Install paid version to see graphs!{end_code}")
+
+    #Back to welcome  page
+    print(f"{colors[7]}°".center(100, "°"))
+    complete_msg = "Function completed!".center(50, "=")
+    start_msg = (f"{colors[5]}Rerun to return to the Welcome page{end_code}")
+    print(f"{colors[5]}{complete_msg}{end_code}")
+    print(f"{colors[6]}{start_msg}{end_code}")
+    if start_msg == 1:
+        start()
+```
+
+
