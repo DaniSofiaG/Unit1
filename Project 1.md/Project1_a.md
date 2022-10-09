@@ -357,5 +357,8 @@ if functions == 5:
 
 <img width="867" alt="Screen Shot 2022-10-09 at 14 20 25" src="https://user-images.githubusercontent.com/111941990/194739502-11acbac1-cef0-42e8-8fd1-ffd71444fad3.png">
 
+# Video recording
+[CS Video](https://drive.google.com/file/d/1fMWMXxkvDhVoVHQm9ZpeUDwqv1-R7PLQ/view?usp=sharing)
+
 
 
